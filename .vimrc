@@ -1,6 +1,9 @@
 " add pathogen (plugin manager) to runtime path
 runtime bundle/vim-pathogen/autoload/pathogen.vim
 
+" execute pathogen
+execute pathogen#infect()
+
 " make 256 colors work
 set term=xterm 
 set t_Co=256 
