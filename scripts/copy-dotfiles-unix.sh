@@ -1,7 +1,7 @@
 #!/bin/bash
 
-mkdir "$home/.vim"
-cp -r ../.vim/* $home/.vim/
+mkdir "~/.vim"
+cp -r ../.vim/* ~/.vim/
 
-cp ../.vimrc $home/.vimrc
+cp ../.vimrc ~/.vimrc
 
