@@ -45,5 +45,8 @@ nmap <CR> o<Esc>
 " same mapping with SHIFT+ENTER to insert new line before current line
 nmap <S-Enter> O<Esc>
 
+" map CTRL+n to open NERDTree
+map <silent> <C-n> :NERDTreeFocus<CR>
+
 
 
