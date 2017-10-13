@@ -91,7 +91,7 @@ set autoindent
 
 " show whitespace
 set list
-set listchars=tab:⌐-,eol:↓,trail:º
+set listchars=tab:>-,eol:$,trail:0
 
 " whitespace test:
 		    	   	  	 	 	  	   	    	
@@ -112,13 +112,3 @@ nmap <S-Enter> O<Esc>
 
 " map CTRL+n to open NERDTree
 map <silent> <C-n> :NERDTreeFocus<CR>
-
-" remap hjkl to jkl; as this is the home row
-" remap h (left) to l, l (right) to ; and ; (unkown) to h
-noremap l h
-noremap ; l
-noremap h ;
-
-
-
-
