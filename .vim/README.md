@@ -1,6 +1,6 @@
 # DIV 3 Syntax Highlighting for Vim
 
-Highlights language keywords, built-in commands, string literals, numbers, (most) operators and compiler options.  
+Highlights language keywords, built-in commands, string literals, numbers, (most) operators, comments, todo comments and compiler options.  
 
 ## Installation
 
