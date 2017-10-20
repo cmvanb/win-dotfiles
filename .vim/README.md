@@ -4,7 +4,7 @@ Highlights language keywords, built-in commands, string literals, numbers, (most
 
 ## Installation
 
-You need `.vim/syntax/div3.vim` and `.vim/ftdetect/div3.vim` in your own `.vim`/`vimfiles` directory. Keep the same folder structure!  
+You need `.vim/syntax/div3.vim` and `.vim/ftdetect/div3.vim` in your own `.vim` or `vimfiles` directory. Keep the same folder structure!  
 
 ## Screenshot
 
