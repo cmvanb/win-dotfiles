@@ -6,4 +6,4 @@ You need `.vim/syntax/div3.vim` and `.vim/ftdetect/div3.vim` in your own `.vim`/
 
 ## Screenshot
 
-[Imgur](https://i.imgur.com/vlMGg0i.png)
+![Imgur](https://i.imgur.com/vlMGg0i.png)
