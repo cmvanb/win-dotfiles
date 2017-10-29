@@ -5,8 +5,8 @@ if exists("b:current_syntax")
 endif
 
 " Keywords
-syntax keyword div3Keywords program process begin end private const global local function repeat until loop frame if else switch from while for break continue return clone debug offset compiler_options
-syntax keyword div3Keywords PROGRAM PROCESS BEGIN END PRIVATE CONST GLOBAL LOCAL FUNCTION REPEAT UNTIL LOOP FRAME IF ELSE SWITCH FROM WHILE FOR BREAK CONTINUE RETURN CLONE DEBUG OFFSET COMPILER_OPTIONS
+syntax keyword div3Keywords program process begin end private const global local function repeat until loop frame if else switch from while for break continue return clone debug offset compiler_options do struct
+syntax keyword div3Keywords PROGRAM PROCESS BEGIN END PRIVATE CONST GLOBAL LOCAL FUNCTION REPEAT UNTIL LOOP FRAME IF ELSE SWITCH FROM WHILE FOR BREAK CONTINUE RETURN CLONE DEBUG OFFSET COMPILER_OPTIONS DO STRUCT
 
 " Comments
 syntax keyword div3TodoComment contained TODO FIXME TBD NOTE
