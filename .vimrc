@@ -90,7 +90,7 @@ set softtabstop=4
 set autoindent
 
 " show whitespace
-set list
+set nolist
 set listchars=tab:>-,eol:$,trail:0
 
 " whitespace test:
