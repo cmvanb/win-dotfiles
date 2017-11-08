@@ -111,4 +111,4 @@ nmap <CR> o<Esc>
 nmap <S-Enter> O<Esc>
 
 " map CTRL+n to open NERDTree
-map <silent> <C-n> :NERDTreeFocus<CR>
+map <silent> <C-n> :NERDTreeToggle<CR>
