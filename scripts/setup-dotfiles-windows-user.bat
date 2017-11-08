@@ -3,8 +3,8 @@
 :: update git submodules
 git submodule update --init
 
-:: make a junction (symbolic hard link directory) for vimfiles/
+:: make a junction (symbolic link directory) for vimfiles/
 mklink /J %userprofile%\vimfiles %~dp0..\.vim
 
-:: make a hard link (symbolic hard link file) for .vimrc
-mklink /H %userprofile%\.vimrc %~dp0..\.vimrc"
+:: make a symbolic link (symbolic link file) for .vimrc
+mklink %userprofile%\.vimrc %~dp0..\.vimrc"
