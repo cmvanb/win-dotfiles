@@ -112,3 +112,6 @@ nmap <S-Enter> O<Esc>
 
 " map CTRL+n to open NERDTree
 map <silent> <C-n> :NERDTreeToggle<CR>
+
+" map jj to Escape for easier switching out of insert mode
+inoremap jj <Esc>
