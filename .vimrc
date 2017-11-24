@@ -14,6 +14,19 @@ let g:UltiSnipsExpandTrigger="<tab>"
 let g:UltiSnipsJumpForwardTrigger="<c-j>"
 let g:UltiSnipsJumpBackwardTrigger="<c-k>"
 
+" easymotion
+"     disable default mapping
+let g:EasyMotion_do_mapping = 0 
+
+"     jump anywhere with minimal keystrokes
+nmap s <Plug>(easymotion-overwin-f)
+
+"     case insensitive
+let g:EasyMotion_smartcase = 1
+
+map <Leader>j <Plug>(easymotion-j)
+map <Leader>k <Plug>(easymotion-k)
+
 " -------------------- UNICODE ------------------------------------------------
 " fix unicode issues
 if has("multi_byte")
@@ -88,6 +101,9 @@ set softtabstop=4
 
 " automatically indent
 set autoindent
+
+" don't wrap lines
+set nowrap
 
 " show whitespace
 set nolist
