@@ -24,8 +24,18 @@ nmap s <Plug>(easymotion-overwin-f)
 "     case insensitive
 let g:EasyMotion_smartcase = 1
 
+"     move to any word
+map <Leader>w <Plug>(easymotion-bd-w)
+nmap <Leader>w <Plug>(easymotion-overwin-w)
+
+"     move to any line
+map <Leader>l <Plug>(easymotion-bd-jk)
+nmap <Leader>l <Plug>(easymotion-overwin-line)
+
+"     move to line above or below
 map <Leader>j <Plug>(easymotion-j)
 map <Leader>k <Plug>(easymotion-k)
+
 
 " -------------------- UNICODE ------------------------------------------------
 " fix unicode issues
