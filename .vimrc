@@ -12,7 +12,7 @@ let g:UltiSnipsSnippetsDir="~/vimfiles/mysnippets"
 let g:UltiSnipsSnippetDirectories=["mysnippets"]
 let g:UltiSnipsExpandTrigger="<tab>"
 let g:UltiSnipsJumpForwardTrigger="<c-j>"
-let g:UltiSnipsJumpBackwardTrigger="<c-k>"
+"let g:UltiSnipsJumpBackwardTrigger="<c-k>"
 
 " easymotion
 "     disable default mapping
@@ -50,14 +50,14 @@ if has("multi_byte")
 endif
 
 " unicode test:
-"   ¡²³¤¼½¾¥×
-"   äåé®þüúíóö«»¬
-"   áßðø¶´
-"   æ©ñµç¿•▫░·□͵
 "   Euro symbol: [€]
 
 " -------------------- FILE FORMAT --------------------------------------------
 set ff=unix
+
+" -------------------- BACKSPACE ----------------------------------------------
+" fix backspace setting
+set backspace=indent,eol,start
 
 " -------------------- CONEMU/CMDER -------------------------------------------
 " ConEmu (cmder on windows) settings, needed to make colors work.
@@ -70,9 +70,7 @@ if !empty($CONEMUBUILD)
     let &t_AB="\e[48;5;%dm"
     let &t_AF="\e[38;5;%dm"
     " fix backspace issues with vim in ConEmu
-    set backspace=indent,eol,start
     inoremap <Char-0x07F> <c-r>=Backspace()<CR>
-    inoremap <BS> <c-r>=Backspace()<CR>
 
     func Backspace()
         if col('.') == 1
@@ -117,7 +115,7 @@ set nowrap
 
 " show whitespace
 set nolist
-set listchars=tab:>-,eol:$,trail:0
+set listchars=tab:→-,eol:↓,trail:⌂
 
 " whitespace test:
 		    	   	  	 	 	  	   	    	
