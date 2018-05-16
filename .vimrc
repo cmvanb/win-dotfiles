@@ -125,6 +125,9 @@ set listchars=tab:→-,eol:↓,trail:⌂
 " whitespace test:
 		    	   	  	 	 	  	   	    	
 
+" -------------------- FILE NAVIGATION ----------------------------------------
+set autochdir
+
 " -------------------- SEARCH -------------------------------------------------
 " highlight search results
 set hlsearch
