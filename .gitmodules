@@ -25,3 +25,9 @@
 [submodule ".vim/pack/cmvanb/start/vim-json"]
 	path = .vim/pack/cmvanb/start/vim-json
 	url = git@github.com:elzr/vim-json.git
+[submodule "vim/pack/cmvanb/start/typescript-vim"]
+	path = vim/pack/cmvanb/start/typescript-vim
+	url = git@github.com:leafgarland/typescript-vim.git
+[submodule ".vim/pack/cmvanb/start/typescript-vim"]
+	path = .vim/pack/cmvanb/start/typescript-vim
+	url = git@github.com:leafgarland/typescript-vim.git
