@@ -79,6 +79,7 @@ endif
 
 " -------------------- COLOR/HIGHLIGHTING -------------------------------------
 " syntax highlighting on
+filetype plugin on
 syntax on
 
 " choose color scheme
