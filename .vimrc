@@ -54,27 +54,18 @@ set backspace=indent,eol,start
 " -------------------- CONEMU/CMDER -------------------------------------------
 " ConEmu (cmder on windows) settings, needed to make colors work.
 if !empty($CONEMUBUILD)
-    " unicode setting
-    set termencoding=utf-8
     " make 256 colors work
     set term=xterm
     set t_Co=256
+    " unicode setting
+    set termencoding=utf-8
+    set nocompatible
+    " fix character issue
     let &t_AB="\e[48;5;%dm"
     let &t_AF="\e[38;5;%dm"
     " fix backspace issues with vim in ConEmu
-    inoremap <Char-0x07F> <c-r>=Backspace()<CR>
-
-    func Backspace()
-        if col('.') == 1
-            if line('.')  != 1
-                return  "\<ESC>kA\<Del>"
-            else
-                return ""
-            endif
-        else
-            return "\<Left>\<Del>"
-        endif
-    endfunc
+    inoremap <Char-0x07F> <BS>
+    nnoremap <Char-0x07F> <BS>
 endif
 
 " -------------------- COLOR/HIGHLIGHTING -------------------------------------
@@ -83,6 +74,7 @@ filetype plugin on
 syntax on
 
 " choose color scheme
+set background=dark
 colorscheme molokai
 
 " -------------------- MISC INFO ----------------------------------------------
