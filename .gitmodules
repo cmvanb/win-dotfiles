@@ -1,6 +1,3 @@
-[submodule ".vim/pack/cmvanb/start/vim-pathogen"]
-	path = .vim/pack/cmvanb/start/vim-pathogen
-	url = git@github.com:tpope/vim-pathogen.git
 [submodule ".vim/pack/cmvanb/start/nerdtree"]
 	path = .vim/pack/cmvanb/start/nerdtree
 	url = git@github.com:scrooloose/nerdtree.git
@@ -21,7 +18,7 @@
 	url = git@github.com:pangloss/vim-javascript.git
 [submodule ".vim/pack/cmvanb/start/vim-jsx"]
 	path = .vim/pack/cmvanb/start/vim-jsx
-	url = https://github.com/mxw/vim-jsx.git
+	url = git@github.com:mxw/vim-jsx.git
 [submodule ".vim/pack/cmvanb/start/vim-es6"]
 	path = .vim/pack/cmvanb/start/vim-es6
 	url = git@github.com:isRuslan/vim-es6.git
