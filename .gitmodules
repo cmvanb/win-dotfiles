@@ -1,27 +1,30 @@
-[submodule ".vim/bundle/vim-pathogen"]
-	path = .vim/bundle/vim-pathogen
+[submodule ".vim/pack/cmvanb/start/vim-pathogen"]
+	path = .vim/pack/cmvanb/start/vim-pathogen
 	url = git@github.com:tpope/vim-pathogen.git
-[submodule ".vim/bundle/nerdtree"]
-	path = .vim/bundle/nerdtree
+[submodule ".vim/pack/cmvanb/start/nerdtree"]
+	path = .vim/pack/cmvanb/start/nerdtree
 	url = git@github.com:scrooloose/nerdtree.git
-[submodule ".vim/bundle/vim-surround"]
-	path = .vim/bundle/vim-surround
+[submodule ".vim/pack/cmvanb/start/vim-surround"]
+	path = .vim/pack/cmvanb/start/vim-surround
 	url = git@github.com:tpope/vim-surround.git
 	branch = master
-[submodule ".vim/bundle/vim-easymotion"]
-	path = .vim/bundle/vim-easymotion
+[submodule ".vim/pack/cmvanb/start/vim-easymotion"]
+	path = .vim/pack/cmvanb/start/vim-easymotion
 	url = git@github.com:easymotion/vim-easymotion.git
 	branch = master
-[submodule ".vim/bundle/ale"]
-	path = .vim/bundle/ale
+[submodule ".vim/pack/cmvanb/start/ale"]
+	path = .vim/pack/cmvanb/start/ale
 	url = git@github.com:w0rp/ale.git
 	branch = master
-[submodule ".vim/bundle/vim-javascript"]
-	path = .vim/bundle/vim-javascript
+[submodule ".vim/pack/cmvanb/start/vim-javascript"]
+	path = .vim/pack/cmvanb/start/vim-javascript
 	url = git@github.com:pangloss/vim-javascript.git
-[submodule ".vim/bundle/vim-jsx"]
-	path = .vim/bundle/vim-jsx
+[submodule ".vim/pack/cmvanb/start/vim-jsx"]
+	path = .vim/pack/cmvanb/start/vim-jsx
 	url = https://github.com/mxw/vim-jsx.git
-[submodule ".vim/bundle/vim-es6"]
-	path = .vim/bundle/vim-es6
+[submodule ".vim/pack/cmvanb/start/vim-es6"]
+	path = .vim/pack/cmvanb/start/vim-es6
 	url = git@github.com:isRuslan/vim-es6.git
+[submodule ".vim/pack/cmvanb/start/vim-json"]
+	path = .vim/pack/cmvanb/start/vim-json
+	url = git@github.com:elzr/vim-json.git
