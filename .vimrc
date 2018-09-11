@@ -6,13 +6,6 @@ let g:ale_fix_on_save = 1
 let g:ale_fixers = {}
 let g:ale_fixers['javascript'] = ['prettier']
 
-" ulti snips
-let g:UltiSnipsSnippetsDir="~/vimfiles/mysnippets"
-let g:UltiSnipsSnippetDirectories=["mysnippets"]
-let g:UltiSnipsExpandTrigger="<tab>"
-let g:UltiSnipsJumpForwardTrigger="<c-j>"
-"let g:UltiSnipsJumpBackwardTrigger="<c-k>"
-
 " easymotion
 "     disable default mapping
 let g:EasyMotion_do_mapping = 0 
