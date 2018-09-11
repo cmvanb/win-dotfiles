@@ -1,12 +1,6 @@
 " -------------------- CASPER'S VIMRC -----------------------------------------
 
 " -------------------- PLUGINS ------------------------------------------------
-" add pathogen (plugin manager) to runtime path
-runtime bundle/vim-pathogen/autoload/pathogen.vim
-
-" execute pathogen
-execute pathogen#infect()
-
 " ALE & prettier
 let g:ale_fix_on_save = 1
 let g:ale_fixers = {}
