@@ -8,7 +8,7 @@ let g:ale_fixers['javascript'] = ['prettier']
 
 " easymotion
 "     disable default mapping
-let g:EasyMotion_do_mapping = 0 
+let g:EasyMotion_do_mapping = 0
 
 "     jump anywhere with minimal keystrokes
 nmap s <Plug>(easymotion-overwin-f)
@@ -29,6 +29,23 @@ map <Leader>j <Plug>(easymotion-j)
 map <Leader>k <Plug>(easymotion-k)
 
 
+" -------------------- CONEMU/CMDER -------------------------------------------
+" ConEmu (cmder on windows) settings, needed to make colors work.
+if !empty($ConEmuBuild)
+    " make 256 colors work
+    set term=xterm
+    set t_Co=256
+
+    " fix character issue
+    let &t_AB="\e[48;5;%dm"
+    let &t_AF="\e[38;5;%dm"
+
+    " fix backspace issues with vim in ConEmu
+    inoremap <Char-0x07F> <BS>
+    nnoremap <Char-0x07F> <BS>
+endif
+
+
 " -------------------- UNICODE ------------------------------------------------
 " fix unicode issues
 if has("multi_byte")
@@ -44,29 +61,10 @@ endif
 " unicode test:
 "   Euro symbol: [€]
 
+
 " -------------------- FILE FORMAT --------------------------------------------
 set ff=unix
 
-" -------------------- BACKSPACE ----------------------------------------------
-" fix backspace setting
-set backspace=indent,eol,start
-
-" -------------------- CONEMU/CMDER -------------------------------------------
-" ConEmu (cmder on windows) settings, needed to make colors work.
-if !empty($CONEMUBUILD)
-    " make 256 colors work
-    set term=xterm
-    set t_Co=256
-    " unicode setting
-    set termencoding=utf-8
-    set nocompatible
-    " fix character issue
-    let &t_AB="\e[48;5;%dm"
-    let &t_AF="\e[38;5;%dm"
-    " fix backspace issues with vim in ConEmu
-    inoremap <Char-0x07F> <BS>
-    nnoremap <Char-0x07F> <BS>
-endif
 
 " -------------------- COLOR/HIGHLIGHTING -------------------------------------
 " syntax highlighting on
@@ -74,12 +72,19 @@ filetype plugin on
 syntax on
 
 " choose color scheme
-set background=dark
+" NOTE: This needs to happen after set t_Co
 colorscheme molokai
+
+
+" -------------------- BACKSPACE ----------------------------------------------
+" fix backspace setting
+set backspace=indent,eol,start
+
 
 " -------------------- MISC INFO ----------------------------------------------
 " show column and line info
 set ruler
+
 
 " -------------------- WHITESPACE / INDENTATION -------------------------------
 " allow filetypes to have unique indentation settings
@@ -103,10 +108,11 @@ set nolist
 set listchars=tab:→-,eol:↓,trail:⌂
 
 " whitespace test:
-		    	   	  	 	 	  	   	    	
+
 
 " -------------------- FILE NAVIGATION ----------------------------------------
 set autochdir
+
 
 " -------------------- SEARCH -------------------------------------------------
 " highlight search results
@@ -114,6 +120,7 @@ set hlsearch
 
 " show partial matches for searches
 set incsearch
+
 
 " -------------------- MAPPINGS -----------------------------------------------
 " map ENTER to insert new line (after current line) and exit insert mode
@@ -127,3 +134,4 @@ map <silent> <C-n> :NERDTreeToggle<CR>
 
 " map jj to Escape for easier switching out of insert mode
 inoremap jj <Esc>
+
