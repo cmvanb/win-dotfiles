@@ -28,6 +28,22 @@ nmap <Leader>l <Plug>(easymotion-overwin-line)
 map <Leader>j <Plug>(easymotion-j)
 map <Leader>k <Plug>(easymotion-k)
 
+" -------------------- GVIM / WINDOWS -----------------------------------------
+" disable warning bell sound
+set belloff=all
+
+" set font
+if has("gui_running")
+  if has("gui_win32")
+    set guifont=InputMonoNarrow_Light:h11:cANSI
+  endif
+endif
+
+" fullscreen DLL
+autocmd VimEnter * call libcallnr("gvimfullscreen.dll", "ToggleFullScreen", 0)
+
+" activate/deactivate full screen with function key <F11>  
+map <F11> <Esc>:call libcallnr("gvimfullscreen.dll", "ToggleFullScreen", 0)<CR>
 
 " -------------------- CONEMU/CMDER -------------------------------------------
 " ConEmu (cmder on windows) settings, needed to make colors work.
