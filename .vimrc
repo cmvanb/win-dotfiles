@@ -32,18 +32,25 @@ map <Leader>k <Plug>(easymotion-k)
 " disable warning bell sound
 set belloff=all
 
-" set font
 if has("gui_running")
   if has("gui_win32")
+    " set font
     set guifont=InputMonoNarrow_Light:h11:cANSI
+
+    " fullscreen DLL
+    autocmd VimEnter * call libcallnr(expand("$HOME") . "\\vimfiles\\external-plugins\\gvimfullscreen\\gvimfullscreen.dll.x64", "ToggleFullScreen", 0)
+
+    " activate/deactivate full screen with function key <F11>
+    map <F11> <Esc>:call libcallnr(expand("$HOME") . "\\vimfiles\\external-plugins\\gvimfullscreen\\gvimfullscreen.dll.x64", "ToggleFullScreen", 0)<CR>
+
+    " disable annoying menu bars
+    set guioptions-=m  "remove menu bar
+    set guioptions-=T  "remove toolbar
+    set guioptions-=r  "remove right-hand scroll bar
+    set guioptions-=L  "remove left-hand scroll bar
   endif
 endif
 
-" fullscreen DLL
-autocmd VimEnter * call libcallnr("gvimfullscreen.dll", "ToggleFullScreen", 0)
-
-" activate/deactivate full screen with function key <F11>  
-map <F11> <Esc>:call libcallnr("gvimfullscreen.dll", "ToggleFullScreen", 0)<CR>
 
 " -------------------- CONEMU/CMDER -------------------------------------------
 " ConEmu (cmder on windows) settings, needed to make colors work.

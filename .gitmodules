@@ -31,3 +31,6 @@
 [submodule ".vim/pack/cmvanb/start/typescript-vim"]
 	path = .vim/pack/cmvanb/start/typescript-vim
 	url = git@github.com:leafgarland/typescript-vim.git
+[submodule ".vim/external-plugins/gvimfullscreen"]
+	path = .vim/external-plugins/gvimfullscreen
+	url = git@github.com:xqin/gvimfullscreen.git
