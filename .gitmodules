@@ -34,6 +34,6 @@
 [submodule ".vim/external-plugins/gvimfullscreen"]
 	path = .vim/external-plugins/gvimfullscreen
 	url = git@github.com:xqin/gvimfullscreen.git
-[submodule ".vim\\pack\\cmvanb\\start\\ctrlp"]
-	path = .vim\\pack\\cmvanb\\start\\ctrlp
+[submodule ".vim/pack/cmvanb/start/ctrlp"]
+	path = .vim/pack/cmvanb/start/ctrlp
 	url = git@github.com:ctrlpvim/ctrlp.vim.git
