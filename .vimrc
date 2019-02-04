@@ -38,10 +38,10 @@ if has("gui_running")
     set guifont=InputMonoNarrow_Light:h11:cANSI
 
     " fullscreen DLL
-    autocmd VimEnter * call libcallnr(expand("$HOME") . "\\vimfiles\\external-plugins\\gvimfullscreen\\gvimfullscreen.dll.x64", "ToggleFullScreen", 0)
+    autocmd VimEnter * call libcallnr(expand("$HOME") . "\\vimfiles\\external-plugins\\gvimfullscreen\\gvimfullscreen", "ToggleFullScreen", 0)
 
     " activate/deactivate full screen with function key <F11>
-    map <F11> <Esc>:call libcallnr(expand("$HOME") . "\\vimfiles\\external-plugins\\gvimfullscreen\\gvimfullscreen.dll.x64", "ToggleFullScreen", 0)<CR>
+    map <F11> <Esc>:call libcallnr(expand("$HOME") . "\\vimfiles\\external-plugins\\gvimfullscreen\\gvimfullscreen", "ToggleFullScreen", 0)<CR>
 
     " disable annoying menu bars
     set guioptions-=m  "remove menu bar
