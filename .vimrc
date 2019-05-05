@@ -134,7 +134,8 @@ set listchars=tab:→-,eol:↓,trail:⌂
 
 
 " -------------------- FILE NAVIGATION ----------------------------------------
-set autochdir
+"  NOTE: This command might be outdated. Try `cd %:h` if you still need it.
+"set autochdir
 
 
 " -------------------- SEARCH -------------------------------------------------
