@@ -96,7 +96,7 @@ syntax on
 
 " choose color scheme
 " NOTE: This needs to happen after set t_Co
-colorscheme molokai
+colorscheme blackboard
 
 
 " -------------------- BACKSPACE ----------------------------------------------
